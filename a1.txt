@@ -1,0 +1,4 @@
+sno	temperature	humidity	pressure	light
+1	25.5	60	1012	300
+2	26.1	58	1011	320
+3	24.9	65	1013	280

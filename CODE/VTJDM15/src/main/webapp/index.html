@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="ISO-8859-1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sensor Data Portal</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      color: #f0f0f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(10px);
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: #4cc9f0;
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    nav a {
+      color: #f0f0f0;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #4cc9f0;
+    }
+
+    .hero {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px;
+      background: rgba(0,0,0,0.55);
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px #4cc9f0;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto 30px;
+      color: #dcdcdc;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(8px);
+      padding: 30px 20px;
+      border-radius: 15px;
+      width: 260px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: 1px solid rgba(76, 201, 240, 0.3);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px #4cc9f0;
+    }
+
+    .card h3 {
+      color: #4cc9f0;
+      margin-bottom: 15px;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: linear-gradient(45deg, #4cc9f0, #4895ef);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: background 0.3s;
+    }
+
+    .card a:hover {
+      background: linear-gradient(45deg, #4895ef, #4cc9f0);
+    }
+
+    footer {
+      background: rgba(0,0,0,0.8);
+      padding: 20px;
+      text-align: center;
+      color: #bbb;
+      font-size: 14px;
+      border-top: 1px solid rgba(76, 201, 240, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Sensor Data Portal</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <h2>Welcome to Real-Time Sensor Data Portal</h2>
+      <p>Monitor, manage, and access secure sensor data through different roles. Choose your access panel to proceed.</p>
+      <div class="cards">
+        <div class="card">
+          <h3>Admin Panel</h3>
+          <p>Manage users, data, and system configurations.</p>
+          <a href="Admin.jsp">Login as Admin</a>
+        </div>
+        <div class="card">
+          <h3>User Panel</h3>
+          <p>Access and visualize sensor data securely.</p>
+          <a href="ulogin.jsp">Login as User</a>
+        </div>
+        <div class="card">
+          <h3>Client Panel</h3>
+          <p>Explore and request real-time insights.</p>
+          <a href="client.jsp">Login as Client</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Sensor Data Portal | Designed for Real-Time IoT Applications
+  </footer>
+
+</body>
+</html>
